@@ -52,6 +52,7 @@ comma_remote: bool = False
 tested_branch: bool = False
 origin = get_git_remote()
 branch = get_git_full_branchname()
+commit = get_git_commit()
 
 if (origin is not None) and (branch is not None):
   try:
@@ -91,4 +92,5 @@ if __name__ == "__main__":
   print("Version: %s" % version)
   print("Remote: %s" % origin)
   print("Branch: %s" % branch)
+  print("Commit: %s" % commit)
   print("Prebuilt: %s" % prebuilt)
