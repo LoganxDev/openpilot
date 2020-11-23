@@ -162,7 +162,6 @@ void ui_draw_sidebar(UIState *s) {
   ui_draw_sidebar_settings_button(s);
   ui_draw_sidebar_home_button(s);
   ui_draw_sidebar_network_strength(s);
-  printf("\n hw type: %hu\n",s->scene.hwType);
   if (s->scene.hwType != cereal::HealthData::HwType::DOS) {
     ui_draw_sidebar_battery_icon(s);
   }

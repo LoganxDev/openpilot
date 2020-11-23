@@ -263,6 +263,8 @@ def thermald_thread():
     msg.thermal.batteryVoltage = get_battery_voltage()
     msg.thermal.usbOnline = get_usb_present()
 
+    print(f"thermal thread run eon ? {EON} uno ? {is_uno}")
+
     # Fake battery levels on uno for frame
     if (not EON) or is_uno:
       msg.thermal.batteryPercent = 100

@@ -54,6 +54,7 @@ def update_panda():
   cloudlog.info("Connecting to panda")
 
   while True:
+    print("Looking for panda....")
     # break on normal mode Panda
     panda_list = Panda.list()
     if len(panda_list) > 0:

@@ -402,6 +402,7 @@ void hardware_control_thread() {
   unsigned int cnt = 0;
 
   while (!do_exit && panda->connected) {
+    printf("panda connected!!!\n");
     cnt++;
     sm.update(1000); // TODO: what happens if EINTR is sent while in sm.update?
 
